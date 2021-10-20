@@ -58,7 +58,7 @@ window.addEventListener('load', async function() {
 function approve() {
     var trxspenddoc=document.getElementById('spend-allowance')
     console.log(trxspenddoc);
-    approveCAKE(web3.utils.toWei(trxspenddoc.value));
+    approveCAKE(web3.utils.toWei(trxspenddoc.value.toString()));
 }
 
 function controlLoop(){
