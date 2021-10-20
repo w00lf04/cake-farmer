@@ -154,19 +154,19 @@ function refreshData(){
     var userTotalReferralsElem = document.getElementById('user-total-referrals');
     userTotalReferrals(function(result){
         rawStr = Number(result).toFixed(0);
-        userTotalReferralsElem.textContent = rawStr;
+        userTotalReferralsElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
     var spentLimitElem = document.getElementById('spend-limit');
     spendLimit(function(result){
         rawStr = Number(result).toFixed(0);
-        spentLimitElem.textContent = rawStr;
+        spentLimitElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
     var userBalanceElem = document.getElementById('user-balance');
     userBalance(function(result){
         rawStr = Number(result).toFixed(0);
-        userBalanceElem.textContent = rawStr;
+        userBalanceElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
 }
