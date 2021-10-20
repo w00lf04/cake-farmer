@@ -132,11 +132,11 @@ function refreshData(){
     });
 
 
-    var userAmountOfDepositsElem = document.getElementById('user-amount-of-deposits');
-    userAvailable(function(result){
-        rawStr = Number(result).toFixed(0);
-        userAmountOfDepositsElem.textContent = stripDecimals(rawStr) + ' CAKE';
-    });
+    // var userAmountOfDepositsElem = document.getElementById('user-amount-of-deposits');
+    // userAvailable(function(result){
+        // rawStr = Number(result).toFixed(0);
+        // userAmountOfDepositsElem.textContent = stripDecimals(rawStr) + ' CAKE';
+    // });
 
     var userTotalWithdrawnElem = document.getElementById('user-total-withdrawn');
     userTotalWithdrawn(function(result){
