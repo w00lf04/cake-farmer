@@ -19,7 +19,7 @@ function spendLimit(callback) {
 		  callback(web3.utils.fromWei(result));
 	  }).catch((err) => {
 		  console.log(err)
-	  });<<
+	  });
   }
   
   function userBalance(callback){
