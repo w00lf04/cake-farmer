@@ -105,11 +105,11 @@ function refreshData(){
     });
 
 
-    var userDownlineCountElem = document.getElementById('user-downline-count');
-    userDownlineCount(function(result){
-        rawStr = Number(result).toFixed(0);
-        userDownlineCountElem.textContent = stripDecimals(rawStr);
-    });
+    // var userDownlineCountElem = document.getElementById('user-downline-count');
+    // userDownlineCount(function(result){
+        // rawStr = Number(result).toFixed(0);
+        // userDownlineCountElem.textContent = stripDecimals(rawStr);
+    // });
 
    // userDividends
 
