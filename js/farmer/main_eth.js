@@ -57,7 +57,7 @@ function approve() {
 
 function controlLoop(){
     refreshData()
-    setTimeout(controlLoop,25000)
+    setTimeout(controlLoop,5000)
 }
 function controlLoopFaster(){
     //liveUpdateEggs()
