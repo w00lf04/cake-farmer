@@ -135,6 +135,10 @@ ol {
 
 /* Buttons */
 
+.btn-lg {
+	width: 100%;
+}
+
 .site-btn {
 	position: relative;
 	display: inline-block;
