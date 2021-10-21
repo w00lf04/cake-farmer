@@ -145,11 +145,11 @@ function refreshData(){
     });
 
     
-    var userTotalReferralsElem = document.getElementById('user-total-referrals');
-    userTotalReferrals(function(result){
-        rawStr = Number(result).toFixed(3);
-        userTotalReferralsElem.textContent = rawStr.toLocaleString() + " CAKE";
-    });
+    // var userTotalReferralsElem = document.getElementById('user-total-referrals');
+    // userTotalReferrals(function(result){
+        // rawStr = Number(result).toFixed(3);
+        // userTotalReferralsElem.textContent = rawStr.toLocaleString() + " CAKE";
+    // });
 
     var spentLimitElem = document.getElementById('spend-limit');
     spendLimit(function(result){
