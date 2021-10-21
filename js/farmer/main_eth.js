@@ -166,10 +166,37 @@ function refreshData(){
 	var myInvestPlan1Elem = document.getElementById('my-invest-plan1');
 	var plan = 1;
 	userDepositInfo(plan-1, function(result){
-		console.log("myInvestPlan1Elem", result);
+
 		var amount = web3.utils.fromWei(result.amount);
         rawStr = Number(amount).toFixed(3);
-        myInvestPlan1Elem.textContent = rawStr.toLocaleString() + " CAKE";
+        myInvestPlan1Elem.textContent = "Balance: " + rawStr.toLocaleString() + " CAKE";
+    });
+	
+	var myInvestPlan2Elem = document.getElementById('my-invest-plan2');
+	var plan = 2;
+	userDepositInfo(plan-1, function(result){
+
+		var amount = web3.utils.fromWei(result.amount);
+        rawStr = Number(amount).toFixed(3);
+        myInvestPlan2Elem.textContent = "Balance: " + rawStr.toLocaleString() + " CAKE";
+    });
+	
+	var myInvestPlan3Elem = document.getElementById('my-invest-plan3');
+	var plan = 3;
+	userDepositInfo(plan-1, function(result){
+
+		var amount = web3.utils.fromWei(result.amount);
+        rawStr = Number(amount).toFixed(3);
+        myInvestPlan3Elem.textContent = "Balance: " + rawStr.toLocaleString() + " CAKE";
+    });
+	
+	var myInvestPlan4Elem = document.getElementById('my-invest-plan4');
+	var plan = 4;
+	userDepositInfo(plan-1, function(result){
+
+		var amount = web3.utils.fromWei(result.amount);
+        rawStr = Number(amount).toFixed(3);
+        myInvestPlan4Elem.textContent = "Balance: " + rawStr.toLocaleString() + " CAKE";
     });
 
 }
