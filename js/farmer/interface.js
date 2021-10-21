@@ -147,14 +147,14 @@ function userTotalReferrals(callback){
 }
 
 
-// function userDepositInfo(callback){
-//     minersContract.methods.getUserDepositInfo(currentAddr, indexnumber).call().then(result => {
-// 		//var amt = web3.utils.fromWei(result)
-//         callback(result);
-//     }).catch((err) => {
-//         console.log(err)
-//     });
-// }
+function userDepositInfo(indexnumber, callback){
+    minersContract.methods.getUserDepositInfo(currentAddr, indexnumber).call().then(result => {
+		//var amt = web3.utils.fromWei(result)
+        callback(result);
+    }).catch((err) => {
+        console.log(err)
+    });
+}
 
 
 

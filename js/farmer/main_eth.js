@@ -162,6 +162,14 @@ function refreshData(){
         rawStr = Number(result).toFixed(0);
         userBalanceElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
+	
+	var myInvestPlan1Elem = document.getElementById('my-invest-plan1');
+	var plan = 1;
+	userDepositInfo(plan-1, function(result){
+		console.log("myInvestPlan1Elem", result);
+        //rawStr = Number(result).toFixed(0);
+        //myInvestPlan1Elem.textContent = rawStr.toLocaleString() + " CAKE";
+    });
 
 }
 
