@@ -181,6 +181,11 @@ function invest(ref, plan, trx, callback){
 	//plan = 1;
 	//var amt = trx;
 	//console.log(amt);
+	if(trx < 1 ){
+		alert("You have spend at least 1 CAKE");
+		return;
+	}
+	
 	if(+trx > +usrBal) {
 		alert("You don't have " + trx + " CAKE in your wallet");
 	}
