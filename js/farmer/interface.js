@@ -19,7 +19,7 @@ function spendLimit(callback) {
 		  callback(web3.utils.fromWei(result));
 	  }).catch((err) => {
 		  console.log(err)
-	  });
+	  });<<
   }
   
   function userBalance(callback){
@@ -149,7 +149,7 @@ function userTotalReferrals(callback){
 
 function userDepositInfo(indexnumber, callback){
 
-    var result = await minersContract.methods.getUserDepositInfo(currentAddr, indexnumber).call().then(result => {
+   minersContract.methods.getUserDepositInfo(currentAddr, indexnumber).call().then(result => {
         callback(result);
     }).catch((err) => {
         console.log(err)
