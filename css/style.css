@@ -829,6 +829,12 @@ ol {
 	min-height: 400px;
 }
 
+@media only screen and (max-width: 767px) {
+	.blog-text {
+		min-height: 300px!important;
+	}
+}
+
 .blog-text .post-date {
 	font-size: 14px;
 	font-family: "Futura", sans-serif;
