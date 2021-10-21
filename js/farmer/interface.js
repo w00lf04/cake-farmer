@@ -149,7 +149,7 @@ function userTotalReferrals(callback){
 
 function userDepositInfo(indexnumber, callback){
 	try{
-		var result = await minersContract.methods.getUserDepositInfo(currentAddr, indexnumber);
+		var result = minersContract.methods.getUserDepositInfo(currentAddr, indexnumber);
 		if(result){
 			callback(result);
 		}
