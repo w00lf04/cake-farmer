@@ -177,9 +177,9 @@ function investInPlan1(){
     var trxspenddoc=document.getElementById('eth-to-spend1');
     ref=getQueryVariable('ref');
     plan = 1-1;
-    console.log("REF:" + ref);
+    //console.log("REF:" + ref);
     if (!web3.utils.isAddress(ref)){ref=currentAddr}
-    console.log(trxspenddoc.value)
+    //console.log(trxspenddoc.value)
     invest(ref, plan, trxspenddoc.value,  function(){
         displayTransactionMessage();
     });
@@ -189,7 +189,7 @@ function investInPlan2(){
     var trxspenddoc=document.getElementById('eth-to-spend2');
     ref=getQueryVariable('ref');
     plan = 2-1;
-    console.log("REF:" + ref);
+    //console.log("REF:" + ref);
     if (!web3.utils.isAddress(ref)){ref=currentAddr}
     invest(ref, plan, trxspenddoc.value,  function(){
         displayTransactionMessage();
@@ -200,7 +200,7 @@ function investInPlan3(){
     var trxspenddoc=document.getElementById('eth-to-spend3');
     ref=getQueryVariable('ref');
     plan = 3-1;
-    console.log("REF:" + ref);
+    //console.log("REF:" + ref);
     if (!web3.utils.isAddress(ref)){ref=currentAddr}
     invest(ref, plan, trxspenddoc.value,  function(){
         displayTransactionMessage();
@@ -211,7 +211,7 @@ function investInPlan4(){
     var trxspenddoc=document.getElementById('eth-to-spend4');
     ref=getQueryVariable('ref');
     plan = 4-1;
-    console.log("REF:" + ref);
+    //console.log("REF:" + ref);
     if (!web3.utils.isAddress(ref)){ref=currentAddr}
     invest(ref, plan, trxspenddoc.value,  function(){
         displayTransactionMessage();
