@@ -147,19 +147,19 @@ function refreshData(){
     
     var userTotalReferralsElem = document.getElementById('user-total-referrals');
     userTotalReferrals(function(result){
-        rawStr = Number(result).toFixed(0);
+        rawStr = Number(result).toFixed(3);
         userTotalReferralsElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
     var spentLimitElem = document.getElementById('spend-limit');
     spendLimit(function(result){
-        rawStr = Number(result).toFixed(0);
+        rawStr = Number(result).toFixed(3);
         spentLimitElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
     var userBalanceElem = document.getElementById('user-balance');
     userBalance(function(result){
-        rawStr = Number(result).toFixed(0);
+        rawStr = Number(result).toFixed(3);
         userBalanceElem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 	
@@ -167,7 +167,8 @@ function refreshData(){
 	var plan = 1;
 	userDepositInfo(plan-1, function(result){
 		console.log("myInvestPlan1Elem", result);
-        rawStr = Number(result.amount).toFixed(0);
+		var amount = web3.utils.fromWei(result.amount);
+        rawStr = Number(amount).toFixed(3);
         myInvestPlan1Elem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
