@@ -113,11 +113,11 @@ function refreshData(){
 
    // userDividends
 
-    var userDividendsElem = document.getElementById('user-dividends');
-    userDividends(function(result){
-        rawStr = Number(result).toFixed(3);
-        userDividendsElem.textContent = stripDecimals(rawStr) + ' CAKE';
-    });
+    // var userDividendsElem = document.getElementById('user-dividends');
+    // userDividends(function(result){
+        // rawStr = Number(result).toFixed(3);
+        // userDividendsElem.textContent = stripDecimals(rawStr) + ' CAKE';
+    // });
 
     var userAvailableElem = document.getElementById('user-available');
     userAvailable(function(result){
