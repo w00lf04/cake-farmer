@@ -167,8 +167,8 @@ function refreshData(){
 	var plan = 1;
 	userDepositInfo(plan-1, function(result){
 		console.log("myInvestPlan1Elem", result);
-        //rawStr = Number(result).toFixed(0);
-        //myInvestPlan1Elem.textContent = rawStr.toLocaleString() + " CAKE";
+        rawStr = Number(result.amount).toFixed(0);
+        myInvestPlan1Elem.textContent = rawStr.toLocaleString() + " CAKE";
     });
 
 }
