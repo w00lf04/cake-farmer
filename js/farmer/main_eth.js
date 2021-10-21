@@ -115,13 +115,13 @@ function refreshData(){
 
     var userDividendsElem = document.getElementById('user-dividends');
     userDividends(function(result){
-        rawStr = Number(result).toFixed(4);
+        rawStr = Number(result).toFixed(3);
         userDividendsElem.textContent = stripDecimals(rawStr) + ' CAKE';
     });
 
     var userAvailableElem = document.getElementById('user-available');
     userAvailable(function(result){
-        rawStr = Number(result).toFixed(4);
+        rawStr = Number(result).toFixed(3);
         userAvailableElem.textContent = stripDecimals(rawStr) + ' CAKE';
     });
 
@@ -134,13 +134,13 @@ function refreshData(){
 
     var userTotalWithdrawnElem = document.getElementById('user-total-withdrawn');
     userTotalWithdrawn(function(result){
-        rawStr = Number(result).toFixed(4);
+        rawStr = Number(result).toFixed(3);
         userTotalWithdrawnElem.textContent = stripDecimals(rawStr) + ' CAKE';
     });
 
     var userReferralTotalBonusElem = document.getElementById('user-referral-total-bonus');
     userReferralTotalBonus(function(result){
-        rawStr = Number(result).toFixed(4);
+        rawStr = Number(result).toFixed(3);
         userReferralTotalBonusElem.textContent = stripDecimals(rawStr) + ' CAKE';
     });
 
@@ -272,7 +272,7 @@ function displayModalMessage(message){
     setTimeout(removeModal,3000)
 }
 function formatTrxValue(trxstr){
-    return parseFloat(parseFloat(trxstr).toFixed(4));
+    return parseFloat(parseFloat(trxstr).toFixed(3));
 }
 function getQueryVariable(variable)
 {

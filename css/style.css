@@ -841,7 +841,7 @@ ol {
 	color: #16d0c5;
 	text-transform: uppercase;
 	margin-bottom: 15px;
-	display: block;
+	/*display: block;*/
 	letter-spacing: 2px;
 }
 
